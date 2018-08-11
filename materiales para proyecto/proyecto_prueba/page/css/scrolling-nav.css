@@ -12,6 +12,9 @@ header {
   header {
     padding: 156px 0 100px;
   }
+  .fondo{
+    background-size: 50%;
+  }
 }
 
 section {
