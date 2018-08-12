@@ -25,6 +25,10 @@ section {
 */
 
 footer{
-  border-top: 1px solid #cecece; 
+  /*border-top: 1px solid #cecece; */
   
+}
+
+.line{
+  border-right: 1px solid rgb(226, 226, 226);
 }
