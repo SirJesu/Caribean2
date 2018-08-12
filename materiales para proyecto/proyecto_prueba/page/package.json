@@ -11,19 +11,19 @@
         "",
         ""
     ],
-    "homepage": "",
+    "homepage": "http://caribeanservice.com/index.html",
     "bugs": {
         "url": "https://github.com/SirJesu/Caribean2/issues",
         "email": "lavelsoft@gmail.com"
     },
-    "license": "MIT",
-    "author": "Start Bootstrap",
+    "license": "ASF",
+    "author": "Lavel Soft",
     "contributors": [
-        "David Miller (http://davidmiller.io/)"
+        "Jesus Rodriguez"
     ],
     "repository": {
         "type": "git",
-        "url": "https://github.com/BlackrockDigital/startbootstrap-scrolling-nav.git"
+        "url": "https://github.com/SirJesu/Caribean2.git"
     },
     "dependencies": {
         "bootstrap": "4.1.1",
