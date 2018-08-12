@@ -1,20 +1,20 @@
 {
-    "title": "Caribean Service Inmobiliaria",
-    "name": "website-caribean-cervice",
-    "version": "0.1.0",
-    "description": "Sitio web para la inmobiliaria Caribean Service en Cartagena",
+    "title": "Scrolling Nav",
+    "name": "startbootstrap-scrolling-nav",
+    "version": "4.1.1",
+    "description": "A smooth scrolling navigation HTML template built with Bootstrap",
     "keywords": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "css",
+        "sass",
+        "html",
+        "responsive",
+        "theme",
+        "template"
     ],
-    "homepage": "",
+    "homepage": "https://startbootstrap.com/template-overviews/scrolling-nav",
     "bugs": {
-        "url": "https://github.com/SirJesu/Caribean2/issues",
-        "email": "lavelsoft@gmail.com"
+        "url": "https://github.com/BlackrockDigital/startbootstrap-scrolling-nav/issues",
+        "email": "feedback@startbootstrap.com"
     },
     "license": "MIT",
     "author": "Start Bootstrap",
