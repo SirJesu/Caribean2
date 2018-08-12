@@ -4,12 +4,12 @@
     "version": "0.1.0",
     "description": "Sitio web para la inmobiliaria Caribean Service en Cartagena",
     "keywords": [
-        "",
-        "",
-        "",
-        "",
-        "",
-        ""
+        "Inmobiliarias en Cartagena",
+        "Venta de propiedades",
+        "real estate booker",
+        "corredor de bienes raíces",
+        "Arriendos de propiedades",
+        "Gestion de proyectos inmobiliarios"
     ],
     "homepage": "http://caribeanservice.com/index.html",
     "bugs": {

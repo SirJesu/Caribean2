@@ -14,10 +14,12 @@ header {
 }
 
 section {
+  transition: 3s;
   padding: 100px 0; /*150px 0*/
 }
 
+/*
 #about{
   border-bottom: 2px solid #ff9400;
 }
-
+*/
