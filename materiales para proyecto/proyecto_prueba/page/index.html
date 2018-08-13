@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
   <head>
 
@@ -55,6 +55,14 @@
 
   <body id="page-top">
 
+    <!--
+    <div id="google_translate_element"></div><script type="text/javascript">
+      function googleTranslateElementInit() {
+        new google.translate.TranslateElement({pageLanguage: 'es', layout: google.translate.TranslateElement.FloatPosition.TOP_LEFT}, 'google_translate_element');
+      }
+      </script><script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      -->
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top" id="mainNav">
       <div class="container">
@@ -69,26 +77,23 @@
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav ml-auto">
             <li class="nav-item">
-              <a class="nav-link enlace" href="">Propiedades</a>
+              <a class="nav-link enlace" href="index.html">Inicio</a>
             </li>
-
-            <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                  Dropdown
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a class="dropdown-item" href="#">Action</a>
-                  <a class="dropdown-item" href="#">Another action</a>
-                  <div class="dropdown-divider"></div>
-                  <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-              </li>
+            <li class="nav-item">
+              <a class="nav-link enlace" href="servicios.html">Servicios</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link enlace" href="propiedades.html">Propiedades</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link enlace" href="proyectos.html">Proyectos</a>
+            </li>
 
             <li class="nav-item">
-              <a class="nav-link enlace active" href="">Nosotros</a>
+              <a class="nav-link enlace active" href="empresa.html">Empresa</a>
             </li>
             <form class="form-inline my-2 my-lg-0">
-                <button type="button" class="btn btn-outline-warning btt" data-toggle="tooltip" data-placement="bottom" title="Comunicate con nosotros" data-animation="true">Contactar</button>
+                <button type="button" class="btn btn-outline-danger btt" data-toggle="tooltip" data-placement="bottom" title="Comunicate con nosotros" data-animation="true">Contactar</button>
                 <!--<button class="btn btn-outline-primary" type="button" style="border: 1px solid; border-radius: 0%;">Contactar</button>-->
                 <button type="button" class="btn btn-outline-primary btt" data-toggle="tooltip" data-placement="bottom" title="Nosotros publicaremos tu inmueble" data-animation="true">Publica tu inmueble</button>
                 <style>
@@ -106,7 +111,7 @@
       <div class="container text-left " >
         <div> </div>
         <h1>Caribean Service Inmobiliaria</h1>
-        <p class="lead">La calidad en el buen servicio es nuestra premisa.</p>
+        <p class="lead">La calidad y el buen servicio son nuestras premisas.</p>
       </div>
     </header>
     <style>
@@ -143,78 +148,109 @@
           <div class="col-lg-8 mx-auto">
             <h2>Nuestros servicios</h2>
             <p class="lead">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut optio velit inventore, expedita quo laboriosam possimus ea consequatur vitae, doloribus consequuntur ex. Nemo assumenda laborum vel, labore ut velit dignissimos.</p>
-            
-            <!--Listado acordeon-->
-            <div class="container">
-                <div class="row justify-content-md-center">
-                  <div class="col">
-                      <div class="accordion" id="accordionExample">
-                          <div class="card">
-                            <div class="card-header" id="headingOne">
-                              <h5 class="mb-0">
-                                <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                  Mas Informacion
-                                </button>
-                              </h5>
-                            </div>
-                            <div id="collapseOne" class="collapse " aria-labelledby="headingOne" data-parent="#accordionExample">
-                              <div class="card-body">
-                                ...
-                              </div>
-                            </div>
-                          </div>
+            <br>
 
-                        </div>
-                  </div>
-                </div>
-            </div>
-         
-            <!--carrusel-->
             <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
+              <div class="carousel-inner">
+                <div class="carousel-item active">
 
-                      <div class="card">
-                          <img class="card-img-top" src="https://i.pinimg.com/originals/ca/c0/7b/cac07bb50447e855db023bc9ca058331.jpg" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                          </div>
-                        </div>
+                  <br>
+                  <div class="card-deck">
+                    <div class="card">
+                      <img class="card-img-top" src="img/servicios/arriendo.jpg" alt="Arriendos">
+                      <div class="card-body">
+                        <h5 class="card-title">Arriendos</h5>
+                        <p class="card-text">...</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="img/servicios/ventas.jpg" alt="Ventas">
+                      <div class="card-body">
+                        <h5 class="card-title">Ventas</h5>
+                        <p class="card-text">...</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="img/servicios/avaluos.jpg" alt="Avaluos">
+                      <div class="card-body">
+                        <h5 class="card-title">Avalúos</h5>
+                        <p class="card-text">...</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
                   </div>
-                  <div class="carousel-item">
+                  
 
-                      <div class="card">
-                          <img class="card-img-top" src="https://i.pinimg.com/originals/ca/c0/7b/cac07bb50447e855db023bc9ca058331.jpg" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                          </div>
-                        </div>
-                  </div>
-                  <div class="carousel-item">
-
-                      <div class="card">
-                          <img class="card-img-top" src="https://i.pinimg.com/originals/ca/c0/7b/cac07bb50447e855db023bc9ca058331.jpg" alt="Card image cap">
-                          <div class="card-body">
-                            <h5 class="card-title">Card title</h5>
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
-                          </div>
-                        </div>
-                  </div>
                 </div>
-                <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
-                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
-                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                  <span class="sr-only">Next</span>
-                </a>
+                <div class="carousel-item">
+
+                  <br>
+                  <div class="card-deck">
+                    <div class="card">
+                      <img class="card-img-top" src="img/servicios/sucesion.jpg" alt="Sucesion_de_Bienes">
+                      <div class="card-body">
+                        <h5 class="card-title">Sucesión de Bienes</h5>
+                        <p class="card-text">...</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="img/servicios/asistencia.jpg" alt="Asistencia_Comercial_y_Juridica">
+                      <div class="card-body">
+                        <h5 class="card-title">Asistencia Comercial y Juridica</h5>
+                        <p class="card-text">...</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="img/servicios/desenglobe.jpg" alt="desenglobe">
+                      <div class="card-body">
+                        <h5 class="card-title">Desenglobe de Inmuebles</h5>
+                        <p class="card-text">...</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+
+                <div class="carousel-item">
+
+                  <br>
+                  <div class="card-deck">
+                    <div class="card">
+                      <img class="card-img-top" src="img/servicios/asesoria.jpg" alt="asesoria">
+                      <div class="card-body">
+                        <h5 class="card-title">Asesoría en credito hipotecario</h5>
+                        <p class="card-text">...</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    <div class="card">
+                      <img class="card-img-top" src="img/servicios/gerencia.jpg" alt="gerencia">
+                      <div class="card-body">
+                        <h5 class="card-title">Gerencia de Proyectos</h5>
+                        <p class="card-text">...</p>
+                        <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                      </div>
+                    </div>
+                    
+                  </div>
+
               </div>
+            
+              <a class="carousel-control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleControls" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+            </div>
+
           </div>
         </div>
       </div>

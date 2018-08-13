@@ -1,4 +1,69 @@
 
+body{
+  transition: 1s;
+  animation-name: aparicion;
+  -moz-animation-name: aparicion;
+  -webkit-animation-name: aparicion;
+  animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -webkit-animation-duration: 1s;
+  animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+  
+}
+
+img{
+  animation-name: aparicion;
+  -moz-animation-name: aparicion;
+  -webkit-animation-name: aparicion;
+  animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -webkit-animation-duration: 2s;
+  animation-direction: alternate;
+  -moz-animation-direction: alternate;
+  -webkit-animation-direction: alternate;
+}
+
+@keyframes aparicion{
+  from{
+    filter: blur(1000px);
+    filter: grayscale(100%);
+    filter: opacity(0%);
+  }
+  to{
+    filter: blur(0px);
+    filter: grayscale(0%);
+    filter: opacity(100%);
+  }
+}
+
+@-moz-keyframes aparicion{
+  from{
+    filter: blur(1000px);
+    filter: grayscale(100%);
+    filter: opacity(0%);
+  }
+  to{
+    filter: blur(0px);
+    filter: grayscale(0%);
+    filter: opacity(100%);
+  }
+}
+
+@-webkit-keyframes aparicion{
+  from{
+    filter: blur(1000px);
+    filter: grayscale(100%);
+    filter: opacity(0%);
+  }
+  to{
+    filter: blur(0px);
+    filter: grayscale(0%);
+    filter: opacity(100%);
+  }
+}
+
 header {
   padding: 154px 0 100px; /* 154px 0 100px*/
 }
@@ -14,21 +79,10 @@ header {
 }
 
 section {
-  transition: 3s;
   padding: 100px 0; /*150px 0*/
-}
-
-/*
-#about{
-  border-bottom: 2px solid #ff9400;
-}
-*/
-
-footer{
-  /*border-top: 1px solid #cecece; */
-  
 }
 
 .line{
   border-right: 1px solid rgb(226, 226, 226);
 }
+
