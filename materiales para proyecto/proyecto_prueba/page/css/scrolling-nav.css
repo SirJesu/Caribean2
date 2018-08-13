@@ -97,3 +97,11 @@ section {
 	bottom:20px;
 	right:20px;
 }
+
+.aliados{
+  max-height: 80px;
+  width: autos;
+  margin: 2px;
+  float: left;
+  text-align: center;
+}
