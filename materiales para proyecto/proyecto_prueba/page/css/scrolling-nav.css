@@ -99,9 +99,9 @@ section {
 }
 
 .aliados{
-  max-height: 80px;
-  width: autos;
-  margin: 2px;
+  max-height: 70px;
+  width: auto;
+  margin: 5px;
   float: left;
-  text-align: center;
+  
 }
