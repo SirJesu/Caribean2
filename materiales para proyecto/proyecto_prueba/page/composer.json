@@ -1,0 +1,14 @@
+{
+    "name": "vendor/caribean",
+    "description": "Description of project caribean.",
+    "authors": [
+        {
+            "name": "Manuel Angulo",
+            "email": "lavelsoft@gmail.com"
+        }
+    ],
+    "require": {
+        "wasico/sdk-php": "^0.5.5",
+        "guzzlehttp/guzzle": "~6.0"
+    }
+}
