@@ -113,3 +113,8 @@ section {
 .container{
   transition: 0.3s;
 }
+
+#mapa-superior{
+  padding-top: 65px;
+  padding-bottom: 0px;
+}
