@@ -78,9 +78,26 @@
             <li class="nav-item">
               <a class="nav-link enlace active" href="index.html">Inicio</a>
             </li>
+
             <li class="nav-item">
-              <a class="nav-link enlace" href="servicios.html">Servicios</a>
+                <div class="dropdown">
+                    <a class="nav-link enlace dropdown-toggle" href="servicios.html" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Servicios</a>
+
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+                      <a class="dropdown-item" href="servicios.html#arriendos">Arriendos de propiedades</a>
+                      <a class="dropdown-item" href="servicios.html#ventas">Venta de Inmuebles</a>
+                      <a class="dropdown-item" href="servicios.html#avaluos">Avalúos inmobiliarios</a>
+                      <a class="dropdown-item" href="servicios.html#sucesion">Sucesión de Bienes </a>
+                      <a class="dropdown-item" href="servicios.html#asistencia">Asistencia Comercial y Juridica</a>
+                      <a class="dropdown-item" href="servicios.html#desenglobe">Desenglobe de Inmuebles</a>
+                      <a class="dropdown-item" href="servicios.html#asesoria">Asesoría en credito hipotecario</a>
+                      <a class="dropdown-item" href="servicios.html#gerencia">Gerencia de Proyectos</a>
+                      <div class="dropdown-divider"></div>
+                      <a class="dropdown-item" href="servicios.html">Todos los servicios</a>
+                    </div>
+                  </div>
             </li>
+
             <li class="nav-item">
               <a class="nav-link enlace" href="propiedades.html">Propiedades</a>
             </li>
@@ -145,7 +162,7 @@
             <div class="modal-content">
               <div class="modal-header">
         
-                <h5 class="modal-title" id="exampleModalCenterTitle">Novedades</h5>
+                <h5 class="modal-title" id="exampleModalCenterTitle">Te presentamos:</h5>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                   <span aria-hidden="true">&times;</span>
                 </button>
@@ -159,11 +176,12 @@
                         <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
                       </ol>
                       <div class="carousel-inner">
+
                         <div class="carousel-item active">
                           <img class="d-block w-100" src="https://static.wixstatic.com/media/f0887e_9224af71554b4ed0bca57ebf357e4ca7~mv2_d_4000_3000_s_4_2.jpg/v1/fill/w_888,h_500,al_c,q_85,usm_0.66_1.00_0.01/f0887e_9224af71554b4ed0bca57ebf357e4ca7~mv2_d_4000_3000_s_4_2.webp" alt="First slide">
                           <div class="carousel-caption d-none d-md-block">
                               <h5></h5>
-                              <p></p>
+                              <p class=""></p>
                           </div>
                         </div>
 
@@ -194,16 +212,19 @@
                       </a>
                     </div>
 
+                    <!--descrip...-->
                    
                         <div class="card-body text-secondary">
-                          <h5 class="card-title">Secondary card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <span class="badge badge-warning">Nuevo</span> <h5 class="card-title"> Arkadia Club - Manga <img src="https://static.wixstatic.com/media/f0887e_b8fb1eb33d0741f6b3ad9404b4ee08e7~mv2.png/v1/crop/x_11,y_0,w_519,h_193/fill/w_253,h_94,al_c,q_80,usm_0.66_1.00_0.01/f0887e_b8fb1eb33d0741f6b3ad9404b4ee08e7~mv2.webp" class="rounded float-right" alt="logo_novedad" style="max-height: 30px;"></h5>
+                          <hr><small>
+                          <p class="card-text text-justify">Edificio de 19 pisos, cuenta con exclusivos diseños y excelentes acabados en áreas desde 60 mt2 hasta 140.17 mt2, con una, dos y tres habitaciones con terraza y vista exterior.
+                          </small>
                         </div>
                      
               </div>
               <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-                <button type="button" class="btn btn-primary">Save changes</button>
+                <button type="button" class="btn btn-outline-success" data-dismiss="modal">Contactar</button>
+                <button type="button" class="btn btn-outline-primary">Más información</button>
               </div>
             </div>
           </div>
