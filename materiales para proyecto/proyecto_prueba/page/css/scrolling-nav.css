@@ -80,6 +80,9 @@ header {
   section{
     padding: 20px;
   }
+  .img-logo{
+    height: 25px;
+  }
 }
 
 section {
