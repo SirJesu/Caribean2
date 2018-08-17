@@ -118,3 +118,18 @@ section {
   padding-top: 65px;
   padding-bottom: 0px;
 }
+
+#caja-contacto{
+  padding-top: 50px;
+  padding-bottom: 0px;
+}
+
+iframe{
+  transition: 1s;
+}
+
+
+iframe:hover{
+  transition: 1s;
+  height: 350px;
+}
