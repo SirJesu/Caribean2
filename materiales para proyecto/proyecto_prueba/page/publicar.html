@@ -124,7 +124,7 @@
     </nav>
 
 
-    <br><br>
+    <br>
     <section id="home">
       <div class="container">
         <div class="row">
@@ -132,102 +132,523 @@
             <h2>Describanos su inmueble!</h2>
             <p class="lead text-justify">En este espacio usted podra detallar y plasmar algunas caracteristicas de su propiedad, con el fin de facilitar el proceso de captacion del inmueble, todos estos datos estan protejidos y seran resguardados de forma privada.</p>
             <br>
-            <from>
+            <from class="needs-validation" novalidate>
             <ul class="nav nav-pills mb-3 border" id="pills-tab" role="tablist">
                 <li class="nav-item">
-                  <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#pills-home" role="tab" aria-controls="pills-home" aria-selected="true">Home</a>
+                  <a class="nav-link active" id="pills-uno-tab" data-toggle="pill" href="#pills-uno" role="tab" aria-controls="pills-home" aria-selected="true">Paso 1</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#pills-profile" role="tab" aria-controls="pills-profile" aria-selected="false">Profile</a>
+                  <a class="nav-link" id="pills-dos-tab" data-toggle="pill" href="#pills-dos" role="tab" aria-controls="pills-profile" aria-selected="false">Paso 2</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#pills-contact" role="tab" aria-controls="pills-contact" aria-selected="false">Contact</a>
+                  <a class="nav-link" id="pills-tres-tab" data-toggle="pill" href="#pills-tres" role="tab" aria-controls="pills-contact" aria-selected="false">Paso 3</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" id="pills-cuatro-tab" data-toggle="pill" href="#pills-cuatro" role="tab" aria-controls="pills-contact" aria-selected="false">Paso 4</a>
                 </li>
               </ul>
               <div class="tab-content" id="pills-tabContent">
-                <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
-                  <!--
-                    select::::
-                    tipo de propiedad.: venta, arriendo, ambos.
+                <div class="tab-pane fade show active" id="pills-uno" role="tabpanel" aria-labelledby="pills-uno-tab">
 
-                    imputs::::
-                    datos del propietario. o representante.
-                      Nombre completo.
-                      No. de docuemento.
-                      dirreccion.
-                      telefono fijo.
-                      celular.
-                      correo electronico.
-                    
-                      select:::
-                    Estado del inmueble.: disponible, ocupado, en construccion, sobre planos.
-                    Tipo de inmueble.: Apartamento, casa, local, oficina, lote, edificio, bodega, paruqeadero.
-                    Destinacion.: vivienda familiar, uso comercial, uso mixto, proyecto.
-                    
-                    chect:::
-                    tenencia de mascotas.
+                  <h4>Detalles Basicos</h4><br>
 
-                    ---
+                  <label for="tipo-negocio">Seleccione el tipo de negocio:</label>
+                  <select class="custom-select" id="tipo-negocio" required>
+                    <option selected>tipo de negocio</option>
+                    <option value="1">Venta</option>
+                    <option value="2">Arriendo</option>
+                    <option value="3">Venta y Arriendo</option>
+                  </select>
+                  
+                  <br><br>
+                  <label for="datos-propietario">Datos del propietario:</label>
+                  <div id="datos-propietario">
+                  <input type="text" class="form-control" id="nombre" placeholder="Nombre del propietario" required><br>
+                  <input type="text" class="form-control" id="id" placeholder="No. de documento" required><br>
+                  <input type="text" class="form-control" id="direccion" placeholder="Direccion" required><br>
+                  <input type="tel" class="form-control" id="telefono-fijo" placeholder="Telefono fijo" required><br>
+                  <input type="tel" class="form-control" id="celular" placeholder="Celular" required><br>
+                  <input type="email" class="form-control" id="correo-electronico" placeholder="correo@example.com" required><br>
+                  </div>
 
-                    imputs::::
-                    direccion de inmueble.
-                    edificio.
-                    punto de referencia.
-                    estrato.
-                    ---
-                    area de lote.
-                    area construida.
-                    frente.
-                    fondo.
-                    ----
+                    <hr>
 
-                    imputs::::
-                    nombre del administrador.
-                    telefono del administrador.
+                      <div>
+                      <label for="estado-inmueble">Seleccione el estado del inmueble:</label>
+                      <select class="custom-select" id="estado-inmueble" required>
+                        <option selected>estado</option>
+                        <option value="1">Disponible</option>
+                        <option value="2">Ocupado</option>
+                        <option value="3">En Construccion</option>
+                        <option value="4">Sobre Planos</option>
+                      </select>
+                      </div>
 
-                    ---
-                    imputs:::: (+)1(-)
-                    -Amenidades internas-
-                    alcobas.
-                    baños.
-                    sala.
-                    comedor.
-                    cocina.
-                    area de labores.
-                    H.servicio.
-                    B. servicio.
-                    mezanine.
-                    minisplit.
-                    citofono.
+                      <div><br>
+                      <label for="tipo-inmueble">Seleccione el tipo de inmueble:</label>
+                      <select class="custom-select" id="tipo-inmueble" required>
+                        <option selected>tipo de inmueble</option>
+                        <option value="1">Apartamento</option>
+                        <option value="2">Casa</option>
+                        <option value="3">Local</option>
+                        <option value="4">Oficina</option>
+                        <option value="5">Lote</option>
+                        <option value="6">Edificio</option>
+                        <option value="7">Bodega</option>
+                        <option value="8">Parqueadero</option>
+                      </select><br>
+                      </div>
 
-                    balcon.
-                    patio.
-                    terraza.
-                    estudio.
-                    stars.
-                    garaje.
+                       <div><br>
+                      <label for="destinacion-inmueble">Destinacion del inmueble:</label>
+                      <select class="custom-select" id="destinacion-inmueble" required>
+                        <option selected>destinacion</option>
+                        <option value="1">Vivienda familiar</option>
+                        <option value="2">Uso comercial</option>
+                        <option value="3">Uso Mixto</option>
+                        <option value="4">Proyecto</option>
+                      </select>
+                      </div>
 
-                    ---
-                    
-
-                  -->
-
+                      <br>
+                  <a href="#pills-tab" class="btn btn-secondary btn-sm">Subir</a>
 
                 </div>
-                <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
+                <div class="tab-pane fade" id="pills-dos" role="tabpanel" aria-labelledby="pills-dos-tab">
 
+                    <h4>Detalles Esenciales</h4><br>
+                      <div>
+                      <label for="">Ubicación de la propiedad</label>
+                      <input type="text" class="form-control" id="direccion-inmueble" placeholder="Direccion del inmueble" required><br>
+                      <input type="text" class="form-control" id="edificio-inmueble" placeholder="Edificio" required><br>
+                      <input type="text" class="form-control" id="punto-referencia" placeholder="Punto de referencia" required><br>
+                      </div>
+                      <hr>
 
+                      <div>
+                      <label for="">Detalles de propiedad</label>
+                      <input type="number" class="form-control" id="area-inmueble" placeholder="Area de lote" required><br>
+                      <input type="number" class="form-control" id="area-construida-inmueble" placeholder="Area Construida" required><br>
+                      <input type="number" class="form-control" id="frente-inmueble" placeholder="Mededia de frente" required><br>
+                      <input type="number" class="form-control" id="fondo-inmueble" placeholder="Mededia de fondo" required><br>
+                      </div>
+                      <hr>
 
+                      <div>
+                      <label for="">Informacion de Admistracion:</label>
+                      <input type="text" class="form-control" id="nombre-administrador" placeholder="Nombre del Administrador" required><br>
+                      <input type="tel" class="form-control" id="telefono-administrador" placeholder="Telefono del administrador" required><br>
+
+                      <label for="">Tenencia de Mascotas:  </label>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="tenencia-mascotas1" name="tenencia-mascotassi" class="custom-control-input">
+                          <label class="custom-control-label" for="customRadioInline1">Si</label>
+                        </div>
+                        <div class="custom-control custom-radio custom-control-inline">
+                          <input type="radio" id="tenencia-mascotas2" name="tenencia-mascotasno" class="custom-control-input">
+                          <label class="custom-control-label" for="customRadioInline2">No</label>
+                        </div><br>
+                      </div>
+
+                      <hr><div>
+                      <label for="">Estrato:</label>
+                      <input type="number" class="form-control" id="estrato-inmueble" placeholder="Estrato del Inmueble" required><br>
+                      </div>
+
+                      <br>
+                  <a href="#pills-tab" class="btn btn-secondary btn-sm">Subir</a>
                 </div>
-                <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab">
+                <div class="tab-pane fade" id="pills-tres" role="tabpanel" aria-labelledby="pills-tres-tab">
 
+                  <h4>Detalles mas especificos</h4><br>
 
+                  <div>
+                  <label for="">Amenidades internas</label>
+                 
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Alcobas</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                   <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Banos</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                   <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Sala</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Comedor</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Cocina</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                    <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Area de Labores</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Habitacion de servicio</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Baño de Servicio</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Balcon</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Patio</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Terraza</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Estudio</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Stars</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Mezanine</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Minisplit</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                   <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Citofono</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Garaje</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
 
+                  </div>
+
+                  <hr>
+                  <div>
+                  <label for="">Amenidades Externas</label>
+                 
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Ascensor</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                   <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Gimnasio</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                   <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Sauna</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Turco</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Zona de paruqes</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                    <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Zona de juegos</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Porteria</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Salon social</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Piscina</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Jacuzzi</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Tanque de reserva</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Parqueadero de Visitas</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Planta electrica</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">BBQ</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Circuito cerrado de Tv.</label>
+                    <div class="col-sm-3">
+                       <input type="number" class="form-control" id="" placeholder="0" required>
+                    </div>
+                  </div>
+                  
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">otros:</label>
+                    <div class="col-sm-3">
+                    <textarea class="form-control" id="mensaje" rows="3" placeholder="otros..." required></textarea>
+                    </div>
+                  </div>
+
+                  </div>
+
+                  <hr>
+                  <div>
+                  <label for="">Estado fisico del inmueble:</label>
+                 
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Pisos</label>
+                    <div class="col-sm-8">
+                      <select class="custom-select" id="" required>
+                        <option selected>...</option>
+                        <option value="1">Nuevo</option>
+                        <option value="2">Bueno</option>
+                        <option value="3">Regular</option>
+                      </select>
+                    </div>
+                  </div>
+                   <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Paredes</label>
+                    <div class="col-sm-8">
+                      <select class="custom-select" id="" required>
+                        <option selected>...</option>
+                        <option value="1">Nuevo</option>
+                        <option value="2">Bueno</option>
+                        <option value="3">Regular</option>
+                      </select>
+                    </div>
+                  </div>
+                   <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Techo</label>
+                    <div class="col-sm-8">
+                      <select class="custom-select" id="" required>
+                        <option selected>...</option>
+                        <option value="1">Nuevo</option>
+                        <option value="2">Bueno</option>
+                        <option value="3">Regular</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Cocina</label>
+                    <div class="col-sm-8">
+                      <select class="custom-select" id="" required>
+                        <option selected>...</option>
+                        <option value="1">Nuevo</option>
+                        <option value="2">Bueno</option>
+                        <option value="3">Regular</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Puertas</label>
+                    <div class="col-sm-8">
+                      <select class="custom-select" id="" required>
+                        <option selected>...</option>
+                        <option value="1">Nuevo</option>
+                        <option value="2">Bueno</option>
+                        <option value="3">Regular</option>
+                      </select>
+                    </div>
+                  </div>
+                    <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Ventanas</label>
+                    <div class="col-sm-8">
+                       <select class="custom-select" id="" required>
+                        <option selected>...</option>
+                        <option value="1">Nuevo</option>
+                        <option value="2">Bueno</option>
+                        <option value="3">Regular</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Baños</label>
+                    <div class="col-sm-8">
+                      <select class="custom-select" id="" required>
+                        <option selected>...</option>
+                        <option value="1">Nuevo</option>
+                        <option value="2">Bueno</option>
+                        <option value="3">Regular</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Closet</label>
+                    <div class="col-sm-8">
+                      <select class="custom-select" id="" required>
+                        <option selected>...</option>
+                        <option value="1">Nuevo</option>
+                        <option value="2">Bueno</option>
+                        <option value="3">Regular</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Ventilacion</label>
+                    <div class="col-sm-8">
+                      <select class="custom-select" id="" required>
+                        <option selected>...</option>
+                        <option value="1">Nuevo</option>
+                        <option value="2">Bueno</option>
+                        <option value="3">Regular</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="form-group row">
+                    <label for="" class="col-sm-2 col-form-label">Iluminacion</label>
+                    <div class="col-sm-8">
+                      <select class="custom-select" id="" required>
+                        <option selected>...</option>
+                        <option value="1">Nuevo</option>
+                        <option value="2">Bueno</option>
+                        <option value="3">Regular</option>
+                      </select>
+                    </div>
+                  </div>
+                  
+                  </div>
+                  <br>
+                  <a href="#pills-tab" class="btn btn-secondary btn-sm">Subir</a>
+                 
+                </div>
+                <div class="tab-pane fade" id="pills-cuatro" role="tabpanel" aria-labelledby="pills-cuatro-tab">
+                  
+                  <h4>Informacion precio del inmueble</h4><br>
+                  <div>
+                    <label for="">Precio de venta:</label>
+                    <input type="number" class="form-control" id="valor-venta" placeholder="$ 0.000.000"><br>
+                    <label for="">Precio negociable:</label>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="">
+                      <label class="form-check-label" for="inlineRadio1">Si</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="">
+                      <label class="form-check-label" for="inlineRadio2">No</label>
+                    </div><br>
+                    <label for="">Valor que deseas recibir:</label>
+                    <input type="number" class="form-control" id="valor-venta-recibir" placeholder="$ 0.000.000"><br>
+
+                    <label for="">Contacto de las llaves:</label>
+                    <input type="text" class="form-control" id="nombre-llaves-venta" placeholder="Nombre del contacto"><br>
+                    <input type="tel" class="form-control" id="tel-llavel-venta" placeholder="telefono"><br>
+                  </div>
+                  <hr>
+                  <div>
+                    <label for="">Precio de arriendo:</label>
+                    <input type="number" class="form-control" id="valor-arriendo" placeholder="$ 0.000.000"><br>
+                    <label for="">Precio negociable:</label>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="">
+                      <label class="form-check-label" for="inlineRadio1">Si</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="" value="">
+                      <label class="form-check-label" for="inlineRadio2">No</label>
+                    </div><br>
+                     <label for="">Valor que deseas recibir:</label>
+                    <input type="number" class="form-control" id="valor-arriendo-recibir" placeholder="$ 0.000.000"><br>
+
+                    <label for="">Contacto de las llaves:</label>
+                    <input type="text" class="form-control" id="nombre-llaves-arriendo" placeholder="Nombre del contacto"><br>
+                    <input type="tel" class="form-control" id="tel-llavel-arriendo" placeholder="telefono">
+                  </div>
+
+                  <br>
+                  <button type="submit" class="btn btn-primary">Enviar</button>
+
+                  <br><br>
+                  <a href="#pills-tab" class="btn btn-secondary btn-sm">Subir</a>
                 </div>
               </div>
 
-              <button type="submit" class="btn btn-primary">Enviar</button>
+             
             </from>
+        
+
           </div>
         </div>
       </div>
@@ -326,6 +747,27 @@
 
     <!-- Custom JavaScript for this theme -->
     <script src="js/scrolling-nav.js"></script>
+ 
+    <script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
   
   </body>
 

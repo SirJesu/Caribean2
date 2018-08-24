@@ -133,14 +133,19 @@
     <div class="jumbotron fondo">
       <div class="container">
         <div class="row">
-          <div class="col-lg-8 mx-auto">
-            <section class="text-white">
-            <h1 class="display-4">Propiedades!</h1>
-            <p class="lead">Conoce nuestra interesante oferta de proyectos inmobiliarios.</p>
-            <hr class="my-4" style="border-color: #fff;">
-            <p>Deseas que Caribean Service gerencie tu proyecto.</p>
-            <a class="btn btn-primary btn-lg" href="#" role="button">Contactar</a>
-            </section>
+          <div class="col-lg-8 mx-auto text-white">
+            <h3>Busca aquí tu inmueble!</h3>
+              
+
+               <div class="input-group">
+                <input type="text" class="form-control rounded" id="buscar" placeholder="Escribe palabras claves Ej: Arkadia...">
+
+                <div class="input-group-prepend" style="margin-left: 3px;">
+                 <span class="input-group-text rounded" id="">
+                   <i class="fas fa-search"></i>
+                 </span>
+                 </div>
+                </div>  
           </div>
         </div>
       </div>
@@ -148,7 +153,8 @@
     <style>
         .fondo{
           transition: 3s;
-          background-image: url("http://www.lurecartagena.com/wp-content/uploads/2015/12/Sailing-in-style.jpg") !important;
+          background-image: url("img/mapa.jpg") !important;
+          
           
           background-size: cover; 
           background-repeat: no-repeat;
@@ -156,27 +162,226 @@
         }
         </style>
 
-        <section id="">
-            <div class="container">
-              <div class="row">
-                <div class="col-lg-8 mx-auto">
-                  
-                
-                </div>
-              </div>
-            </div>
-          </section>
-
-          <section id="">
+      
               <div class="container">
                 <div class="row">
-                  <div class="col-lg-8 mx-auto">
+                  <div class="col-md-3 float-left">
+
+                    <form>
+                      <h4>Filtros:</h4>
+                    <div class="accordion" id="accordionExample">
+                      <div class="card">
+                        <div class="card-header" id="headingOne">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                              Tipo de oferta
+                            </button>
+                          </h5>
+                        </div>
+
+                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <select class="form-control">
+                              <option>Venta y Arriendo</option>
+                              <option>Ventas</option>
+                              <option>Arriendos</option>
+                              <option>Proyectos</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Precio
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                          <div class="card-body">
+                           <select class="form-control">
+                              <option>1,000,000 - 1,000,000,000</option>
+                              <option value="1">1,000,000 - 10,000,000</option>
+                              <option value="2">10,000,000 - 100,000,000</option>
+                              <option value="3">100,000,000 - 500,000,000</option>
+                              <option value="4">500,000,000 - 1,000,000,000</option>
+                              <option value="8">mas de 1,000,000,000</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingThree">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                              Tipo de inmueble
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                          <div class="card-body">
+                          <select class="form-control">
+                            <option selected>Todos</option>
+                            <option value="1">Apartamento</option>
+                            <option value="2">Casa</option>
+                            <option value="3">Local</option>
+                            <option value="4">Oficina</option>
+                            <option value="5">Lote</option>
+                            <option value="6">Edificio</option>
+                            <option value="7">Bodega</option>
+                            <option value="8">Parqueadero</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-header" id="headingespecial">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseespecial" aria-expanded="false" aria-controls="collapseespecial">
+                              Barrio
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseespecial" class="collapse" aria-labelledby="headingespecial" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <select class="form-control">
+                            <option selected>Todos</option>
+                            <option value="1"></option>
+                            <option value="2"></option>
+                            <option value="3"></option>
+                            <option value="4"></option>
+                            <option value="5"></option>
+                            <option value="6"></option>
+                            <option value="7"></option>
+                            <option value="8"></option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="card">
+                        <div class="card-header" id="headingcuatro">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsecuatro" aria-expanded="false" aria-controls="collapsecuatro">
+                              Estrato
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapsecuatro" class="collapse" aria-labelledby="headingcuatro" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <select class="form-control">
+                            <option selected>Todos</option>
+                            <option value="1">Estrato :1</option>
+                            <option value="2">Estrato :2</option>
+                            <option value="3">Estrato :3</option>
+                            <option value="4">Estrato :4</option>
+                            <option value="5">Estrato :5</option>
+                            <option value="6">Estrato :6</option>
+                            </select>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingcinco">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsecinco" aria-expanded="false" aria-controls="collapsecinco">
+                              Habitaciones
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapsecinco" class="collapse" aria-labelledby="headingcinco" data-parent="#accordionExample">
+                          <div class="card-body">
+                             <div class="btn-group mr-2" role="group" aria-label="First group">
+                              <button type="button" class="btn btn-outline-secondary">1</button>
+                              <button type="button" class="btn btn-outline-secondary">2</button>
+                              <button type="button" class="btn btn-outline-secondary">3</button>
+                              <button type="button" class="btn btn-outline-secondary">4+</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingseis">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseseis" aria-expanded="false" aria-controls="collapseseis">
+                              Area M2
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseseis" class="collapse" aria-labelledby="headingseis" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <div class="form-row">
+                            <input type="number" class="form-control col" id="desde-area" placeholder="Desde" value="Desde">
+                            <h2>-</h2>
+                            <input type="number" class="form-control col" id="desde-area" placeholder="hasta" value="hasta">
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="card">
+                        <div class="card-header" id="headingsiete">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapsesiete" aria-expanded="false" aria-controls="collapsesiete">
+                              Baños
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapsesiete" class="collapse" aria-labelledby="headingsiete" data-parent="#accordionExample">
+                          <div class="card-body">
+                            <div class="btn-group mr-2" role="group" aria-label="First group">
+                              <button type="button" class="btn btn-outline-secondary">1</button>
+                              <button type="button" class="btn btn-outline-secondary">2</button>
+                              <button type="button" class="btn btn-outline-secondary">3</button>
+                              <button type="button" class="btn btn-outline-secondary">4+</button>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <br>
+                    <button type="submit" class="btn btn-primary">Aplicar filtros</button>
+                    </form>
+                  </div>
+
+                  <div class="col-md float-right">
+                      <br>
+                      <nav aria-label="breadcrumb">
+                        <ol class="breadcrumb">
+                          <li class="breadcrumb-item"><a href="#">Propiedades</a></li>
+                          <li class="breadcrumb-item active" aria-current="page">General</li>
+                        </ol>
+                      </nav>
                     
-                  
+                       <div class="card float-left col-md-4 propiedaes-cajas">
+                          <a href="">
+                          <img class="card-img-top" src="" alt="">
+                          <div class="card-body">
+                            <h5 class="card-title">$ 0.000.000 (COP)</h5>
+                            <p class="card-text">se arrienda apartamento pie de la popa</p>
+                            <p class="card-text"><small class="text-muted">Cartagena de Indias, Bolivar, Colombia</small></p>
+                          </div>
+                          </a>
+                        </div>
+
+                         <div class="card float-left col-md-4 propiedaes-cajas">
+                          <a href="">
+                          <img class="card-img-top" src="" alt="">
+                          <div class="card-body">
+                            <h5 class="card-title">$ 000.000.000 (COP)</h5>
+                            <p class="card-text">se vende apartamento pie de la popa</p>
+                            <p class="card-text"><small class="text-muted">Cartagena de Indias, Bolivar, Colombia</small></p>
+                          </div>
+                          </a>
+                        </div>
+
+
                   </div>
                 </div>
               </div>
-            </section>
+
 
 
     <!-- Footer -->

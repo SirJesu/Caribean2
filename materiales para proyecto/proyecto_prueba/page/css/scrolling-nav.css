@@ -136,3 +136,11 @@ iframe:hover{
   transition: 1s;
   height: 350px;
 }
+
+.propiedaes-cajas{
+  margin: 5px 5px 5px 5px;
+}
+
+.propiedaes-cajas a{
+  text-decoration: none;
+}
