@@ -396,10 +396,10 @@
               <div class="card-deck">
 
                 <div class="card">
-                  <img class="card-img-top" src="" alt="">
+                  <img class="card-img-top" id="arriendoImg1" src="" alt="">
                     <div class="card-body">
-                      <h5 class="card-title"></h5>
-                      <p class="card-text">...</p>
+                      <h5 class="card-title" id="arriendotitle1"  ></h5>
+                      <p class="card-text" id="arriendoDescripcion1" >...</p>
                     </div>
                     <div class="card-footer">
                       <a href="propiedades.html">
@@ -409,10 +409,10 @@
                 </div>
 
                 <div class="card">
-                  <img class="card-img-top" src="" alt="">
+                  <img class="card-img-top" src="" id="arriendoImg2"  alt="">
                     <div class="card-body">
-                      <h5 class="card-title"></h5>
-                      <p class="card-text">...</p>
+                      <h5 class="card-title"  id="arriendotitle2" ></h5>
+                      <p class="card-text" id="arriendoDescripcion2" >...</p>
                     </div>
                     <div class="card-footer">
                       <a href="propiedades.html">
@@ -422,10 +422,10 @@
                 </div>
 
                 <div class="card">
-                  <img class="card-img-top" src="" alt="">
+                  <img class="card-img-top" src="" id="arriendoImg3"  alt="">
                     <div class="card-body">
-                      <h5 class="card-title"></h5>
-                      <p class="card-text">...</p>
+                      <h5 class="card-title" id="arriendotitle3" ></h5>
+                      <p class="card-text" id="arriendoDescripcion3" >...</p>
                     </div>
                     <div class="card-footer">
                       <a href="propiedades.html">
@@ -453,10 +453,10 @@
               <div class="card-deck">
 
                 <div class="card">
-                  <img class="card-img-top" src="" alt="">
+                  <img class="card-img-top" id="imgVentas1"  src="" alt="">
                     <div class="card-body">
-                      <h5 class="card-title"></h5>
-                      <p class="card-text">...</p>
+                      <h5 class="card-title" id="tituloventas1" ></h5>
+                      <p class="card-text" id="descripcionventas1" >...</p>
                     </div>
                     <div class="card-footer">
                       <a href="propiedades.html">
@@ -466,10 +466,10 @@
                 </div>
 
                 <div class="card">
-                  <img class="card-img-top" src="" alt="">
+                  <img class="card-img-top" id="imgVentas2"  src="" alt="">
                     <div class="card-body">
-                      <h5 class="card-title"></h5>
-                      <p class="card-text">...</p>
+                      <h5 class="card-title" id="tituloventas2" ></h5>
+                      <p class="card-text" id="descripcionventas2">...</p>
                     </div>
                     <div class="card-footer">
                       <a href="propiedades.html">
@@ -479,10 +479,10 @@
                 </div>
 
                 <div class="card">
-                  <img class="card-img-top" src="" alt="">
+                  <img class="card-img-top"  id="imgVentas3" src="" alt="">
                     <div class="card-body">
-                      <h5 class="card-title"></h5>
-                      <p class="card-text">...</p>
+                      <h5 class="card-title" id="tituloventas3" ></h5>
+                      <p class="card-text" id="descripcionventas3" >...</p>
                     </div>
                     <div class="card-footer">
                       <a href="propiedades.html">
@@ -595,10 +595,186 @@
     <!-- Custom JavaScript for this theme 
     <script src="js/scrolling-nav.js"></script>-->
     <script>
-        $(document).ready(function()
-        {
-           $("#mostrarmodal").modal("show");
-        });
+
+  
+
+
+     function Init(){
+      $("#mostrarmodal").modal("show");
+
+
+
+function PropiedadesDestacadas() {
+
+
+ $.ajax({
+url:"Request/indexRequestController.php",
+type:"get",
+dataType:"json",
+data:{accion:"getPropiedades"}
+
+ }).done(function (data) {
+console.log(data[0]);
+
+
+   });
+
+
+}
+
+function VentasAll() {
+$.ajax({
+
+url:"Request/indexRequestController.php",
+type:"get",
+dataType:"json",
+data:{accion:"GetVentas"}
+
+}).done(function (data) {
+ 
+var  venta1 = data[5];
+
+var img1 = venta1.galleries[0];
+
+
+$("#imgVentas1").attr("src",img1[0].url);
+$("#tituloventas1").text("$ "+venta1.sale_price);
+$("#descripcionventas1").text(venta1.title);
+
+var  venta2 = data[1];
+
+
+var img2 = venta1.galleries[0];
+
+
+$("#imgVentas2").attr("src",img2[0].url);
+$("#tituloventas2").text("$ "+venta2.sale_price);
+$("#descripcionventas2").text(venta2.title);
+
+
+
+var  venta3 = data[2];
+
+
+var img3 = venta3.galleries[0];
+
+
+$("#imgVentas3").attr("src",img3[0].url);
+$("#tituloventas3").text("$ "+venta3.sale_price);
+$("#descripcionventas3").text(venta3.title);
+
+
+
+
+  
+}).fail(function (error) { 
+
+
+ });
+
+
+  }
+
+
+function ArriendoAll() {
+
+ $.ajax({
+url:"Request/indexRequestController.php",
+type:"post",
+dataType:"json",
+data:{accion:"GetArriendo"}
+}).done(function (data) { 
+
+var arriendo1 = data[0];
+var img1 = arriendo1.galleries[0];
+
+
+$("#arriendoImg1").attr("src",img1[0].url);
+$("#arriendotitle1").text("$ "+ arriendo1.rent_price);
+$("#arriendoDescripcion1").text(arriendo1.title);
+
+var arriendo2 = data[1];
+var img2 = arriendo2.galleries[0];
+
+$("#arriendoImg2").attr("src",img2[0].url);
+$("#arriendotitle2").text("$ "+arriendo2.rent_price);
+$("#arriendoDescripcion2").text(arriendo2.title);
+
+
+
+var arriendo3 = data[2];
+var img3 = arriendo3.galleries[0];
+$("#arriendoImg3").attr("src",img3[0].url);
+$("#arriendotitle3").text("$ " +arriendo3.rent_price);
+$("#arriendoDescripcion3").text(arriendo3.title);
+
+
+  }).fail(function (error) {
+   
+ });
+
+  }
+
+
+function TiposInmueble() { 
+
+ $.ajax({
+url:"Request/indexRequestController.php",
+type:"post",
+dataType:"json",
+data:{accion:"tiposInmueble"}
+
+
+
+ }).done(function (data) { 
+var count = 0;
+var st = true;
+var element = data["200"];
+console.log(element);
+
+
+
+
+
+  }).fail(function(error){
+
+
+
+ });
+
+
+
+
+ }
+
+
+
+//Call Method
+ TiposInmueble();
+PropiedadesDestacadas();
+ArriendoAll();
+VentasAll();
+
+
+
+
+
+
+     }
+
+
+
+$(function () {
+Init();
+
+
+
+
+
+  });
+
+
+
      </script>
 
     

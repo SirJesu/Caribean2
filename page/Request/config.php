@@ -20,7 +20,7 @@ class config {
     $token = "tZNi_aPxj_mi1Y_qYMX"; 
     $WasiId = "1933735";
      
-    return "&id_company=".$WasiId."&wasi_token=".$token;
+    return "id_company=".$WasiId."&wasi_token=".$token;
   }
   function BaseUrl() {
       
